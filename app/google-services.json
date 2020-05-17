@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "588703577503",
+    "firebase_url": "https://smart-worker-236417.firebaseio.com",
+    "project_id": "smart-worker-236417",
+    "storage_bucket": "smart-worker-236417.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588703577503:android:6d9c010f62be1b0be239aa",
+        "android_client_info": {
+          "package_name": "com.example.SmartWorker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588703577503-qaq9jd25cp2nefvgki5lm0qgusjbi7n4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8XvlPO1t8azrn2XRxuXHCs2JKssfjsqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588703577503-qaq9jd25cp2nefvgki5lm0qgusjbi7n4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

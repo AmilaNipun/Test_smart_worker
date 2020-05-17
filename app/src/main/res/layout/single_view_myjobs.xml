@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/card_view">
+
+        <LinearLayout
+            android:id="@+id/JobImagelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:padding="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <ImageView
+                    android:id="@+id/jobImage_myjobs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/benzcar1" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TitleLayout"
+            android:layout_below="@id/JobImagelayout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10sp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/job_title_single_myjobs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:fontFamily="@font/baloo"
+                android:layout_margin="5dp"
+                android:text="Test"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jobCategorylayout"
+            android:layout_below="@+id/TitleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/jobCategory_myjobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:text="category"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/jobdueDatelayout"
+            android:layout_below="@id/jobCategorylayout"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dueDate_myjobs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/calender"
+                android:layout_marginTop="5dp"
+                android:text="Trim / Edition:AMG LWB"
+                android:textAlignment="gravity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jobBudgetLayout"
+            android:layout_below="@id/jobdueDatelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <TextView
+                android:id="@+id/jobBudget_myjobs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/credit_card"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Model year:2014"
+                android:textAlignment="gravity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/locationLayout"
+            android:layout_below="@id/contactnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <TextView
+                android:id="@+id/addJobLocation_myjobs"
+                android:drawableLeft="@drawable/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="150dp"
+                android:text="Condition: Used"
+                android:textAlignment="gravity" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/contactnum"
+            android:layout_below="@id/jobBudgetLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <TextView
+                android:id="@+id/textviewcontactnum_myjobs"
+                android:drawableLeft="@drawable/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="150dp"
+                android:text="Condition: Used"
+                android:textAlignment="gravity" />
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
