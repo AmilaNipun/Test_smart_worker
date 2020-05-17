@@ -27,6 +27,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
     NavigationView navigationView;
     Toolbar toolbar;
     CardView viewjobs,addjobs,myjobs,help,services;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,7 +125,9 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
                 break;
 
             case R.id.nav_profile:
+                String uid = mAuth.getCurrentUser().getUid();
                 Intent intent = new Intent(Dashboard.this, UserProfile.class);
+                intent.putExtra("UserID",uid);
                 startActivity(intent);
                 break;
 

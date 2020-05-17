@@ -13,7 +13,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="300dp"
             android:background="#fece2f"
             android:padding="20dp">
 
@@ -37,6 +37,7 @@
                 app:fontFamily="@font/bungee" />
 
             <TextView
+                android:id="@+id/username_cus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/full_name"
@@ -52,85 +53,77 @@
 
 
 
-
-        </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="45dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="20dp">
+            android:padding="20dp">
 
-            <com.google.android.material.textfield.TextInputLayout
+            <EditText
+                android:id="@+id/user_full_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:hint="Full Name">
+                android:hint="Full Name"
+                android:drawableLeft="@drawable/profile_icon"
+                android:drawablePadding="10dp"
+                android:inputType="text"/>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/profile_icon"
-                    android:drawablePadding="10dp"
-                    android:text="Full Name" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
+            <EditText
+                android:id="@+id/user_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:hint="E-mail">
+                android:hint="User Name"
+                android:drawableLeft="@drawable/profile_icon"
+                android:drawablePadding="10dp"
+                android:inputType="text"/>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/email_icon"
-                    android:drawablePadding="10dp"
-                    android:text="E-mail" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
+            <EditText
+                android:id="@+id/user_email_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:hint="Mobile Number">
+                android:hint="E-mail"
+                android:drawableLeft="@drawable/email_icon"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"/>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/mobile_icon"
-                    android:drawablePadding="10dp"
-                    android:text="Mobile Number" />
-            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
+            <EditText
+                android:id="@+id/user_mobile_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:hint="Password">
+                android:hint="Mobile Number"
+                android:drawableLeft="@drawable/mobile_icon"
+                android:drawablePadding="10dp"
+                android:inputType="phone"/>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/password_icon"
-                    android:drawablePadding="10dp"
-                    android:text="Password" />
-            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
+                android:id="@+id/userUpdate_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#000000"
                 android:fontFamily="@font/baloo"
                 android:text="Update"
                 android:textColor="#fff"
-                android:textSize="15dp"/>
+                android:textSize="15dp"
+                android:onClick="updateUser"
+                />
+
+            <ProgressBar
+                android:id="@+id/user_update_prograssbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible" />
 
         </LinearLayout>
 
-
+    </LinearLayout>
 
 </ScrollView>

@@ -272,7 +272,7 @@
                             android:layout_below="@id/imageView9"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
-                            android:text="Help"
+                            android:text="Remove Added Jobs"
                             android:textSize="18sp"
                             app:fontFamily="@font/aclonica" />
 
@@ -282,7 +282,7 @@
                             android:layout_height="75dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="15dp"
-                            app:srcCompat="@drawable/help" />
+                            app:srcCompat="@drawable/remove" />
 
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>

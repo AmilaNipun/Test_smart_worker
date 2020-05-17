@@ -28,6 +28,7 @@ public class AdminDashboard extends AppCompatActivity implements NavigationView.
     NavigationView navigationView;
     Toolbar toolbar;
     CardView adminviewjobs,addservices,removejobs,removeservices;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +73,7 @@ public class AdminDashboard extends AppCompatActivity implements NavigationView.
         addservices.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AdminDashboard.this,AddPromotion.class));
+                startActivity(new Intent(AdminDashboard.this, AddServices.class));
             }
         });
 
@@ -97,19 +98,21 @@ public class AdminDashboard extends AppCompatActivity implements NavigationView.
                 break;
 
             case R.id.nav_profile:
-                Intent intent = new Intent(AdminDashboard.this, UserProfile.class);
+                String uid = mAuth.getCurrentUser().getUid();
+                Intent intent = new Intent(AdminDashboard.this, AdminUserProfile.class);
+                intent.putExtra("UserID",uid);
                 startActivity(intent);
                 break;
-
+            case R.id.nav_adduser:
+                startActivity(new Intent(AdminDashboard.this,RegisterAdmin.class));
+                break;
             case R.id.nav_logout:
                 FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(getApplicationContext(), Login.class));
                 Toast.makeText(this,"Successfully Logged Out!",Toast.LENGTH_SHORT).show();
                 finish();
                 break;
-            case R.id.nav_share:
-                Toast.makeText(this,"Share",Toast.LENGTH_SHORT).show();
-                break;
+
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);

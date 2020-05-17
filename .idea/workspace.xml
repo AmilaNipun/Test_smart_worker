@@ -49,10 +49,10 @@
     <property name="algorithm" value="Scalr" />
     <property name="destination" value="DRAWABLE" />
     <property name="format" value="PNG" />
-    <property name="lastFolderRoot" value="$PROJECT_DIR$/../DS/benzcar3.jpg" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="lastFolderRoot" value="$USER_HOME$/Downloads/Remove2.png" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Remove2.png" />
     <property name="method" value="Automatic" />
-    <property name="resolutions" value="LDPI&#10;XXHDPI&#10;XHDPI&#10;MDPI&#10;XXXHDPI&#10;HDPI" />
+    <property name="resolutions" value="XHDPI&#10;XXXHDPI&#10;HDPI&#10;XXHDPI&#10;LDPI&#10;MDPI" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="sourceResolution" value="XHDPI" />
   </component>

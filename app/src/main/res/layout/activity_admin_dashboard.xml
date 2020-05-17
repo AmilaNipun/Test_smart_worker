@@ -141,6 +141,7 @@
                             android:layout_below="@id/addaccessimageView"
                             android:layout_marginTop="10dp"
                             android:text="Add Services"
+                            android:layout_centerHorizontal="true"
                             android:textSize="15sp"
                             app:fontFamily="@font/aclonica" />
 
@@ -195,7 +196,7 @@
                             android:layout_height="75dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="15dp"
-                            app:srcCompat="@drawable/viewjobs" />
+                            app:srcCompat="@drawable/remove" />
 
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -228,7 +229,7 @@
                             android:layout_height="75dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="15dp"
-                            app:srcCompat="@drawable/services" />
+                            app:srcCompat="@drawable/remove2" />
 
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
